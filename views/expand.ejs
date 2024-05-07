@@ -1,0 +1,20 @@
+<%-include("partials/header.ejs") %>
+
+    <div class="container">
+        <h2><%=post.title%></h2>
+        <p class="italic">Author: <%=post.name%></p>
+        <% var text = post.text %>
+        <p><%- text.replace(/\n/g, '<br>') %><p> 
+            <div class="button-group">
+                <form action="/edit", method="POST">
+                  <input type="hidden" name="id" value="<%=id%>">
+                  <button type="submit" class="btn btn-outline-success">Edit</button>
+                </form>
+                <form action="/delete", method="POST">
+                  <input type="hidden" name="id" value="<%=id%>">
+                  <button type="submit" class="btn btn-outline-danger">Delete</button>
+                </form>
+              </div>               
+     </div>
+    </div>
+<%-include("partials/footer.ejs") %>

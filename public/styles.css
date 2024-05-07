@@ -1,0 +1,110 @@
+
+/* Index page */
+
+.header-img {
+    background-image: url("/img/carad2.jpeg");
+    background-repeat: no-repeat;
+    background-size:1400px 500px;
+    
+}
+
+.header-img h1, .header-img p, .header-img a{
+    color: white;
+    text-shadow: .1em .1em 0 grey; 
+
+}
+
+/* subscription page */
+
+
+.s-background-dark {
+    background-color: #f5f5f5;
+}
+
+.s-background-light {
+    background-color: #fafafa;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.main-content {
+    flex-grow: 1;
+}
+
+.footer {
+    flex-grow: 0;
+}
+
+
+.s-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 60px;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 200;
+}
+
+/*Technology Page*/
+
+#bold {
+    font-weight: 500;
+}
+
+.t-paragraph-top {
+
+    margin-top: 50px;
+}
+
+#addbutton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#postsection{
+    margin-bottom: 20px;
+}
+
+/*footer on subscription page*/
+
+
+
+
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 400px) {
+
+    .row h3 {
+        font-size: 15px;
+    }
+    .row p {
+        font-size: 12px;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    .postcard {
+        margin-bottom: 40px;
+    }
+}
+
+
+
